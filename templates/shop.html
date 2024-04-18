@@ -7,7 +7,7 @@
     <!--=============== SWIPER CSS ===============-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <!--=============== HEADER ===============-->
-    <header class="header">
+<header class="header">
       <div class="header__top">
         <div class="header__container container">
           <div class="header__contact">
@@ -35,7 +35,7 @@
 
       <nav class="nav container">
         <a href="http://127.0.0.1:8000/home/" class="nav__logo">
-          <img src="/media/images/logo.svg" alt="" class="nav__logo-img" />
+          <img src="{% static 'images/logo.svg' %}" alt="" class="nav__logo-img" />
         </a>
 
         <div class="nav__menu" id="nav__menu">
@@ -88,9 +88,9 @@
     <!--=============== MAIN ===============-->
     <main class="main">
       <!--=============== BREADCRUMB ===============-->
-      <section class="breadcrumb">
+        <section class="breadcrumb">
         <ul class="bredcrumb__list flex container">
-          <li><a href="http://127.0.0.1:8000/home/" class="bredcrumb__link">Home</a></li>
+          <li><a href="{% url 'home' %}" class="bredcrumb__link">Home</a></li>
           <li><span class="bredcrumb__link">></span></li>
           <li><span class="bredcrumb__link">Shop</span></li>
         </ul>
@@ -109,7 +109,7 @@
             <div class="product__container grid">
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="http://127.0.0.1:8000/details/" class="product__images">
+                  <a href="{% url 'details' %}" class="product__images">
                     <img src="{% static 'images/product-1-1.jpg' %}" alt="" class="product__img default">
                     
                     <img src="{% static 'images/product-1-2.jpg' %}" alt="" class="product__img hover">
@@ -134,7 +134,7 @@
 
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="http://127.0.0.1:8000/details/">
+                  <a href="{% url 'details' %}">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -157,7 +157,7 @@
 
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="http://127.0.0.1:8000/details/" class="product__images">
+                  <a href="{% url 'details' %}" class="product__images">
                     <img src="{% static 'images/product-2-1.jpg' %}" alt="" class="product__img default">
                     
                     <img src="{% static 'images/product-2-2.jpg' %}" alt="" class="product__img hover">
@@ -182,7 +182,7 @@
 
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="http://127.0.0.1:8000/details/">
+                  <a href="{% url 'details' %}">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -205,7 +205,7 @@
 
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="http://127.0.0.1:8000/details/" class="product__images">
+                  <a href="{% url 'details' %}" class="product__images">
                     <img src="{% static 'images/product-3-1.jpg' %}" alt="" class="product__img default">
                     
                     <img src="{% static 'images/product-3-2.jpg' %}" alt="" class="product__img hover">
@@ -230,7 +230,7 @@
 
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="http://127.0.0.1:8000/details/">
+                  <a href="{% url 'details' %}">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -253,7 +253,7 @@
 
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="http://127.0.0.1:8000/details/" class="product__images">
+                  <a href="{% url 'details' %}" class="product__images">
                     <img src="{% static 'images/product-4-1.jpg' %}" alt="" class="product__img default">
                     
                     <img src="{% static 'images/product-4-2.jpg' %}" alt="" class="product__img hover">
@@ -278,7 +278,7 @@
 
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="http://127.0.0.1:8000/details/">
+                  <a href="{% url 'details' %}">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -301,7 +301,7 @@
 
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="http://127.0.0.1:8000/details/" class="product__images">
+                  <a href="{% url 'details' %}" class="product__images">
                     <img src="{% static 'images/product-5-1.jpg' %}" alt="" class="product__img default">
                     
                     <img src="{% static 'images/product-5-2.jpg' %}" alt="" class="product__img hover">
@@ -326,7 +326,7 @@
 
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="http://127.0.0.1:8000/details/">
+                  <a href="{% url 'details' %}">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -349,7 +349,7 @@
 
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="http://127.0.0.1:8000/details/" class="product__images">
+                  <a href="{% url 'details' %}" class="product__images">
                     <img src="{% static 'images/product-6-1.jpg' %}" alt="" class="product__img default">
                     
                     <img src="{% static 'images/product-6-2.jpg' %}" alt="" class="product__img hover">
@@ -374,7 +374,7 @@
 
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="http://127.0.0.1:8000/details/">
+                  <a href="{% url 'details' %}">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -397,7 +397,7 @@
 
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="http://127.0.0.1:8000/details/" class="product__images">
+                  <a href="{% url 'details' %}" class="product__images">
                     <img src="{% static 'images/product-7-1.jpg' %}" alt="" class="product__img default">
                     
                     <img src="{% static 'images/product-7-2.jpg' %}" alt="" class="product__img hover">
@@ -445,7 +445,7 @@
 
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="http://127.0.0.1:8000/details/" class="product__images">
+                  <a href="{% url 'details' %}" class="product__images">
                     <img src="{% static 'images/product-8-1.jpg' %}" alt="" class="product__img default">
                     
                     <img src="{% static 'images/product-8-2.jpg' %}" alt="" class="product__img hover">
@@ -468,7 +468,7 @@
 
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="http://127.0.0.1:8000/details/">
+                  <a href="{% url 'details' %}">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -495,7 +495,7 @@
             <div class="product__container grid">
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="http://127.0.0.1:8000/details/" class="product__images">
+                  <a href="{% url 'details' %}" class="product__images">
                     <img src="{% static 'images/product-9-1.jpg' %}" alt="" class="product__img default">
                     
                     <img src="{% static 'images/product-9-2.jpg' %}" alt="" class="product__img hover">
@@ -520,7 +520,7 @@
 
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="http://127.0.0.1:8000/details/">
+                  <a href="{% url 'details' %}">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -543,7 +543,7 @@
 
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="http://127.0.0.1:8000/details/" class="product__images">
+                  <a href="{% url 'details' %}" class="product__images">
                     <img src="{% static 'images/product-2-1.jpg' %}" alt="" class="product__img default">
                     
                     <img src="{% static 'images/product-2-2.jpg' %}" alt="" class="product__img hover">
@@ -568,7 +568,7 @@
 
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="http://127.0.0.1:8000/details/">
+                  <a href="{% url 'details' %}">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -591,7 +591,7 @@
 
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="http://127.0.0.1:8000/details/" class="product__images">
+                  <a href="{% url 'details' %}" class="product__images">
                     <img src="{% static 'images/product-10-1.jpg' %}" alt="" class="product__img default">
                     
                     <img src="{% static 'images/product-10-2.jpg' %}" alt="" class="product__img hover">
@@ -616,7 +616,7 @@
 
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="http://127.0.0.1:8000/details/">
+                  <a href="{% url 'details' %}">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -639,7 +639,7 @@
 
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="http://127.0.0.1:8000/details/" class="product__images">
+                  <a href="{% url 'details' %}" class="product__images">
                     <img src="{% static 'images/product-4-1.jpg' %}" alt="" class="product__img default">
                     
                     <img src="{% static 'images/product-4-1.jpg' %}" alt="" class="product__img hover">
@@ -687,7 +687,7 @@
 
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="http://127.0.0.1:8000/details/" class="product__images">
+                  <a href="{% url 'details' %}" class="product__images">
                     <img src="{% static 'images/product-5-1.jpg' %}" alt="" class="product__img default">
                     
                     <img src="{% static 'images/product-5-2.jpg' %}" alt="" class="product__img hover">
@@ -712,7 +712,7 @@
 
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="http://127.0.0.1:8000/details/">
+                  <a href="{% url 'details' %}">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -735,7 +735,7 @@
 
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="http://127.0.0.1:8000/details/" class="product__images">
+                  <a href="{% url 'details' %}" class="product__images">
                     <img src="{% static 'images/product-10-1.jpg' %}" alt="" class="product__img default">
                     
                     <img src="{% static 'images/product-10-2.jpg' %}" alt="" class="product__img hover">
@@ -760,7 +760,7 @@
 
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="http://127.0.0.1:8000/details/">
+                  <a href="{% url 'details' %}">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -783,7 +783,7 @@
 
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="http://127.0.0.1:8000/details/" class="product__images">
+                  <a href="{% url 'details' %}" class="product__images">
                     <img src="{% static 'images/product-12-1.jpg' %}" alt="" class="product__img default">
                     
                     <img src="{% static 'images/product-12-2.jpg' %}" alt="" class="product__img hover">
@@ -808,7 +808,7 @@
 
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="http://127.0.0.1:8000/details/">
+                  <a href="{% url 'details' %}">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -831,7 +831,7 @@
 
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="http://127.0.0.1:8000/details/" class="product__images">
+                  <a href="{% url 'details' %}" class="product__images">
                     <img src="{% static 'images/product-11-1.jpg' %}" alt="" class="product__img default">
                     
                     <img src="{% static 'images/product-11-2.jpg' %}" alt="" class="product__img hover">
@@ -854,7 +854,7 @@
 
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="http://127.0.0.1:8000/details/">
+                  <a href="{% url 'details' %}">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -881,7 +881,7 @@
             <div class="product__container grid">
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="http://127.0.0.1:8000/details/" class="product__images">
+                  <a href="{% url 'details' %}" class="product__images">
                     <img src="{% static 'images/product-1-1.jpg' %}" alt="" class="product__img default">
                     
                     <img src="{% static 'images/product-1-2.jpg' %}" alt="" class="product__img hover">
@@ -906,7 +906,7 @@
 
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="http://127.0.0.1:8000/details/">
+                  <a href="{% url 'details' %}">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -929,7 +929,7 @@
 
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="http://127.0.0.1:8000/details/" class="product__images">
+                  <a href="{% url 'details' %}" class="product__images">
                     <img src="{% static 'images/product-12-1.jpg' %}" alt="" class="product__img default">
                     
                     <img src="{% static 'images/product-12-2.jpg' %}" alt="" class="product__img hover">
@@ -954,7 +954,7 @@
 
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="http://127.0.0.1:8000/details/">
+                  <a href="{% url 'details' %}">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -977,7 +977,7 @@
 
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="http://127.0.0.1:8000/details/" class="product__images">
+                  <a href="{% url 'details' %}" class="product__images">
                     <img src="{% static 'images/product-3-1.jpg' %}" alt="" class="product__img default">
                     
                     <img src="{% static 'images/product-3-2.jpg' %}" alt="" class="product__img hover">
@@ -1002,7 +1002,7 @@
 
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="http://127.0.0.1:8000/details/">
+                  <a href="{% url 'details' %}">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -1025,7 +1025,7 @@
 
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="http://127.0.0.1:8000/details/" class="product__images">
+                  <a href="{% url 'details' %}" class="product__images">
                     <img src="{% static 'images/product-13-1.jpg' %}" alt="" class="product__img default">
                     
                     <img src="{% static 'images/product-13-2.jpg' %}" alt="" class="product__img hover">
@@ -1050,7 +1050,7 @@
 
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="http://127.0.0.1:8000/details/">
+                  <a href="{% url 'details' %}">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -1073,7 +1073,7 @@
 
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="http://127.0.0.1:8000/details/" class="product__images">
+                  <a href="{% url 'details' %}" class="product__images">
                     <img src="{% static 'images/product-10-1.jpg' %}" alt="" class="product__img default">
                     
                     <img src="{% static 'images/product-10-2.jpg' %}" alt="" class="product__img hover">
@@ -1098,7 +1098,7 @@
 
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="http://127.0.0.1:8000/details/">
+                  <a href="{% url 'details' %}">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -1121,7 +1121,7 @@
 
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="http://127.0.0.1:8000/details/" class="product__images">
+                  <a href="{% url 'details' %}" class="product__images">
                     <img src="{% static 'images/product-6-1.jpg' %}" alt="" class="product__img default">
                     
                     <img src="{% static 'images/product-6-2.jpg' %}" alt="" class="product__img hover">
@@ -1146,7 +1146,7 @@
 
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="http://127.0.0.1:8000/details/">
+                  <a href="{% url 'details' %}">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -1169,7 +1169,7 @@
 
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="http://127.0.0.1:8000/details/" class="product__images">
+                  <a href="{% url 'details' %}" class="product__images">
                     <img src="{% static 'images/product-9-1.jpg' %}" alt="" class="product__img default">
                     
                     <img src="{% static 'images/product-9-2.jpg' %}" alt="" class="product__img hover">
@@ -1194,7 +1194,7 @@
 
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="http://127.0.0.1:8000/details/">
+                  <a href="{% url 'details' %}">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -1217,7 +1217,7 @@
 
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="http://127.0.0.1:8000/details/" class="product__images">
+                  <a href="{% url 'details' %}" class="product__images">
                     <img src="{% static 'images/product-8-1.jpg' %}" alt="" class="product__img default">
                     
                     <img src="{% static 'images/product-8-2.jpg' %}" alt="" class="product__img hover">
@@ -1240,7 +1240,7 @@
 
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="http://127.0.0.1:8000/details/">
+                  <a href="{% url 'details' %}">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -1266,7 +1266,7 @@
       </section>
 
       <!--=============== NEWSLETTER ===============-->
-      <section class="newsletter section home__newsletter">
+     <section class="newsletter section home__newsletter">
         <div class="newsletter__container container grid">
           <h3 class="newsletter__title flex">
             <img src="{% static 'images/icon-email.svg' %}" alt="" class="newsletter__icon">
@@ -1289,7 +1289,7 @@
     <footer class="footer container">
       <div class="footer__container grid">
         <div class="footer__content">
-          <a href="http://127.0.0.1:8000/home/" class="footer__logo">
+          <a href="{% url 'home' %}" class="footer__logo">
             <img src="{% static 'images/logo.svg' %}" alt="" class="footer__logo-img">
           </a>
 

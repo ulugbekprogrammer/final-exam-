@@ -5,7 +5,7 @@
 <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-regular-straight/css/uicons-regular-straight.css'>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <!--=============== HEADER ===============-->
-   <header class="header">
+ <header class="header">
       <div class="header__top">
         <div class="header__container container">
           <div class="header__contact">
@@ -32,8 +32,8 @@
       </div>
 
       <nav class="nav container">
-        <a href="http://127.0.0.1:8000/home/" class="nav__logo">
-          <img src="/media/images/logo.svg" alt="" class="nav__logo-img" />
+        <a href="{% url 'home' %}" class="nav__logo">
+          <img src="{% static 'images/logo.svg' %}" alt="" class="nav__logo-img" />
         </a>
 
         <div class="nav__menu" id="nav__menu">
@@ -69,12 +69,12 @@
         </div>
 
         <div class="header__user-actions">
-          <a href="wishlist.html" class="header__action-btn">
+          <a href="#" class="header__action-btn">
             <img src="{% static 'images/icon-heart.svg' %}" alt="">
             <span class="count">3</span>
           </a>
 
-          <a href="cart.html" class="header__action-btn">
+          <a href="{% url 'shop' %}" class="header__action-btn">
             <img src="{% static 'images/icon-cart.svg' %}" alt="" >
             <span class="count">3</span>
           </a>
@@ -85,13 +85,14 @@
     <!--=============== MAIN ===============-->
     <main class="main">
       <!--=============== BREADCRUMB ===============-->
-         <section class="breadcrumb">
+       <section class="breadcrumb">
         <ul class="bredcrumb__list flex container">
-          <li><a href="http://127.0.0.1:8000/home/" class="bredcrumb__link">Home</a></li>
+          <li><a href="{% url 'home' %}" class="bredcrumb__link">Home</a></li>
           <li><span class="bredcrumb__link">></span></li>
           <li><span class="bredcrumb__link">Compare</span></li>
         </ul>
       </section>
+
 
       <!--=============== COMPARE ===============-->
       <section class="compare container section--lg">
@@ -244,7 +245,8 @@
       </section>
 
       <!--=============== NEWSLETTER ===============-->
-   <section class="newsletter section home__newsletter">
+   <!--=============== NEWSLETTER ===============-->
+      <section class="newsletter section home__newsletter">
         <div class="newsletter__container container grid">
           <h3 class="newsletter__title flex">
             <img src="{% static 'images/icon-email.svg' %}" alt="" class="newsletter__icon">
@@ -263,11 +265,11 @@
       </section>
     </main>
 
-       <!--=============== FOOTER ===============-->
+    <!--=============== FOOTER ===============-->
     <footer class="footer container">
       <div class="footer__container grid">
         <div class="footer__content">
-          <a href="http://127.0.0.1:8000/home/" class="footer__logo">
+          <a href="{% url 'home' %}" class="footer__logo">
             <img src="{% static 'images/logo.svg' %}" alt="" class="footer__logo-img">
           </a>
 

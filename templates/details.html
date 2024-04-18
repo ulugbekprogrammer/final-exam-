@@ -32,18 +32,18 @@
       </div>
 
       <nav class="nav container">
-        <a href="http://127.0.0.1:8000/home/" class="nav__logo">
-          <img src="/media/images/logo.svg" alt="" class="nav__logo-img" />
+        <a href="{% url 'home' %}" class="nav__logo">
+          <img src="{% static 'images/logo.svg' %}" alt="" class="nav__logo-img" />
         </a>
 
         <div class="nav__menu" id="nav__menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="{% url 'home' %}" class="nav__link active-link">Home</a>
+              <a href="{% url 'home' %}" class="nav__link">Home</a>
             </li>
 
             <li class="nav__item">
-              <a href="{% url 'shop' %}" class="nav__link">Shop</a>
+              <a href="{% url 'shop' %}" class="nav__link  active-link">Shop</a>
             </li>
 
             <li class="nav__item">
@@ -69,12 +69,12 @@
         </div>
 
         <div class="header__user-actions">
-          <a href="wishlist.html" class="header__action-btn">
+          <a href="#" class="header__action-btn">
             <img src="{% static 'images/icon-heart.svg' %}" alt="">
             <span class="count">3</span>
           </a>
 
-          <a href="cart.html" class="header__action-btn">
+          <a href="{% url 'shop' %}" class="header__action-btn">
             <img src="{% static 'images/icon-cart.svg' %}" alt="" >
             <span class="count">3</span>
           </a>
@@ -87,11 +87,9 @@
       <!--=============== BREADCRUMB ===============-->
       <section class="breadcrumb">
         <ul class="bredcrumb__list flex container">
-          <li><a href="http://127.0.0.1:8000/home/" class="bredcrumb__link">Home</a></li>
+          <li><a href="{% url 'home' %}" class="bredcrumb__link">Home</a></li>
           <li><span class="bredcrumb__link">></span></li>
-          <li><span class="bredcrumb__link">Fashion</span></li>
-          <li><span class="bredcrumb__link">></span></li>
-          <li><span class="bredcrumb__link">Henley Shirt</span></li>
+          <li><span class="bredcrumb__link">Details</span></li>
         </ul>
       </section>
 
@@ -394,7 +392,7 @@
         <div class="product__container grid">
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="http://127.0.0.1:8000/details/" class="product__images">
+                  <a href="{% url 'details' %}" class="product__images">
                     <img src="{% static 'images/product-2-1.jpg' %}" alt="" class="product__img default">
                     
                     <img src="{% static 'images/product-2-2.jpg' %}" alt="" class="product__img hover">
@@ -419,7 +417,7 @@
 
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="http://127.0.0.1:8000/details/">
+                  <a href="{% url 'details' %}">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -442,7 +440,7 @@
 
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="http://127.0.0.1:8000/details/" class="product__images">
+                  <a href="{% url 'details' %}" class="product__images">
                     <img src="{% static 'images/product-10-1.jpg' %}" alt="" class="product__img default">
                     
                     <img src="{% static 'images/product-10-2.jpg' %}" alt="" class="product__img hover">
@@ -467,7 +465,7 @@
 
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="http://127.0.0.1:8000/details/">
+                  <a href="{% url 'details' %}">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -490,7 +488,7 @@
 
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="http://127.0.0.1:8000/details/" class="product__images">
+                  <a href="{% url 'details' %}" class="product__images">
                     <img src="{% static 'images/product-5-1.jpg' %}" alt="" class="product__img default">
                     
                     <img src="{% static 'images/product-5-2.jpg' %}" alt="" class="product__img hover">
@@ -515,7 +513,7 @@
 
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="http://127.0.0.1:8000/details/">
+                  <a href="{% url 'details' %}">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -538,7 +536,7 @@
 
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="http://127.0.0.1:8000/details/" class="product__images">
+                  <a href="{% url 'details' %}" class="product__images">
                     <img src="{% static 'images/product-10-1.jpg' %}" alt="" class="product__img default">
                     
                     <img src="{% static 'images/product-10-2.jpg' %}" alt="" class="product__img hover">
@@ -563,7 +561,7 @@
 
                 <div class="product__content">
                   <span class="product__category">Clothing</span>
-                  <a href="http://127.0.0.1:8000/details/">
+                  <a href="{% url 'details' %}">
                     <h3 class="product__title">Colorful Pattern Shirts</h3>
                   </a>
                   <div class="product__rating">
@@ -587,7 +585,7 @@
       </section>
 
       <!--=============== NEWSLETTER ===============-->
-      <section class="newsletter section home__newsletter">
+       <section class="newsletter section home__newsletter">
         <div class="newsletter__container container grid">
           <h3 class="newsletter__title flex">
             <img src="{% static 'images/icon-email.svg' %}" alt="" class="newsletter__icon">
@@ -610,7 +608,7 @@
     <footer class="footer container">
       <div class="footer__container grid">
         <div class="footer__content">
-          <a href="http://127.0.0.1:8000/home/" class="footer__logo">
+          <a href="{% url 'home' %}" class="footer__logo">
             <img src="{% static 'images/logo.svg' %}" alt="" class="footer__logo-img">
           </a>
 

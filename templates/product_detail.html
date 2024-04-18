@@ -5,7 +5,7 @@
 <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-regular-straight/css/uicons-regular-straight.css'>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <!--=============== HEADER ===============-->
-    <header class="header">
+   <header class="header">
       <div class="header__top">
         <div class="header__container container">
           <div class="header__contact">
@@ -43,11 +43,11 @@
             </li>
 
             <li class="nav__item">
-              <a href="{% url 'shop' %}" class="nav__link">Shop</a>
+              <a href="{% url 'shop' %}" class="nav__link active-link">Shop</a>
             </li>
 
             <li class="nav__item">
-              <a href="{% url 'accounts' %}" class="nav__link active-link">My account</a>
+              <a href="{% url 'accounts' %}" class="nav__link">My account</a>
             </li>
 
             <li class="nav__item">
@@ -74,43 +74,29 @@
             <span class="count">3</span>
           </a>
 
-          <a href="{% url 'shop' %}" class="header__action-btn">
+          <a href="{% url 'cart' %}" class="header__action-btn">
             <img src="{% static 'images/icon-cart.svg' %}" alt="" >
             <span class="count">3</span>
           </a>
         </div>
       </nav>
     </header>
-
+    
     <!--=============== MAIN ===============-->
     <main class="main">
       <!--=============== BREADCRUMB ===============-->
-       <section class="breadcrumb">
+        <section class="breadcrumb">
         <ul class="bredcrumb__list flex container">
           <li><a href="{% url 'home' %}" class="bredcrumb__link">Home</a></li>
           <li><span class="bredcrumb__link">></span></li>
-          <li><span class="bredcrumb__link">My account</span></li>
+          <li><span class="bredcrumb__link">Product Detail</span></li>
         </ul>
       </section>
 
-      <!--=============== ACCOUNTS ===============-->
-      <section class="accounts section--lg">
-         <div class="login-register__container container grid">
-          <div class="login">
-            <h3 class="section__title">My account</h3>
+      <!--=============== CHECKOUT ===============-->
+      <section class="checkout"></section>
 
-            <form method="" class="form grid">
-              <h3>Username: {{ user.username }}</h3>
-              <h3>First Name: {{ user.first_name }}</h3>
-              <h3>Last Name: {{ user.last_name }}</h3>
-              <h3>Age: {{ user.age }} years</h3>
-            </form>
-          </div>
-        </div>
-      </section>
-      
-
-      <!--=============== NEWSLETTER ===============-->
+     <!--=============== NEWSLETTER ===============-->
       <section class="newsletter section home__newsletter">
         <div class="newsletter__container container grid">
           <h3 class="newsletter__title flex">
